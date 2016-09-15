@@ -1,437 +1,145 @@
-<!DOCTYPE html><!--[if lt IE 9]>
-<html class='lt-ie9 no-js' lang='en'>
-<![endif]-->
-<!--[if gte IE 9]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>tcd-badminton</title>
-  <meta name="description" content="Trinity College Dublin Badminton Website">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="keywords" content="tcd, Trinity College Dublin, Badminton, tcd badminton">
-  <meta name="author" content="Kieran Fraser">
-  <link rel="stylesheet" href="./styles/main.css">
-  <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
-  <!-- Bootstrap core CSS-->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <!-- Font Awesome CSS-->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="screen">
-  <!-- Animate css-->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
-  <!-- Magnific css-->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
-  <link rel="shortcut icon" href="./images/ico/favicon.png">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./images/ico/apple-touch-icon-144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./images/ico/apple-touch-icon-114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./images/ico/apple-touch-icon-72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="./images/ico/apple-touch-icon-57-precomposed.png">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Trinity Badminton</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
-  <!--[if lt IE 9]>
-  <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.0.0/js/smooth-scroll.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.countto/0.1.0/jquery.countTo.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/4.0.1/shuffle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-  <script src="./scripts/main.js"></script>
-  <div id="tt-preloader">
-    <div id="pre-status">
-      <div class="preload-placeholder"></div>
-    </div>
-  </div>
-  <section id="home" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2" class="tt-fullHeight">
-    <div class="intro">
-      <div class="intro-sub"><br><br>
-        <div class="logo"><img src="images/logo.png" alt="logo" class="img-responsive"></div>
-        <div class="title">
-          <p>Trinity Badminton Club</p>
+
+<body class="body-home">
+    <script>document.body.className += ' fade-out';</script>
+    
+            <div w3-include-html="layout/header.html"></div> 
+
+    <div class="container">
+
+        <div class="row">
+            
+            <div class="box">
+                <div class="col-lg-12 text-center">
+                    <div id="carousel-example-generic" class="carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators hidden-xs">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img class="img-responsive img-full" src="img/slide-1.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/slide-2.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/slide-3.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
+                    </div>
+                    <h2 class="brand-before">
+                        Welcome!
+                    </h2>
+                    <hr class="tagline-divider">
+                    <p>
+                        This is the official TCD Badminton website. Here you can find everything you need to know about our fantastic club and catch up on all the exciting things that are happening within the club.<br>
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="social-icons">
-        <ul class="list-inline">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-behance"></i></a></li>
-          <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-        </ul>
-      </div>
-      <!-- /.social-icons-->
-    </div>
-    <div class="mouse-icon">
-      <div class="wheel"></div>
-    </div>
-  </section>
-  <!-- End Home Section-->
-  <header class="header">
-    <nav role="navigation" class="navbar navbar-custom">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#custom-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand">
-            <!--img(src='images/logo.png', alt='')--></a>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center"><strong>A quick intro</strong>
+                    </h2>
+                    <hr>
+                    <img class="img-responsive img-left" src="img/intro-pic.jpg" alt="">
+                    <hr class="visible-xs">
+                    <p>The TCD Badminton Club is a long standing member of the Dublin University Central Athletic Club (DUCAC) which is the governing body for sport clubs at Trinity College Dublin. We cater for every level of player and the club has enjoyed a rich history of success both on and off the court.</p> <br><br> <p>Over the course of 2016/2017 our new dedicated committee will be aiming to ensure all aspects of the club build upon the success of recent years.</p>
+                    <p>The new club year <strong>kicks off in Freshers week</strong> where our committee members will be on hand in front square to sign you (new and returning students/staff/alumni) up to the club. We'll add you to our mailing list to keep you up to date with important notices about the club and events happening throughout the year. </p>
+                        <p>You should also like our Facebook page and join the official TCD Badminton group to keep up to date with all the exciting things that are happening.</p>
+                </div>
+            </div>
         </div>
-        <div id="custom-collapse" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Joining</a></li>
-            <li><a href="#resume">Training</a></li>
-            <li><a href="#skills">Fixtures</a></li>
-            <li><a href="#works">Committee</a></li>
-            <li><a href="#blog">Varsities</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center"><strong>Important Information</strong>
+                    </h2>
+                    <hr>
+                    <p><strong> Freshers Week (19th - 23rd September 2016)</strong><br>We will have a stand in Front Square during Freshers week. Feel free to drop by to join up or have a chat!</p>
+                    <p><strong>Every Wednesday </strong><br>Social badminton is back! Every Wednesday come and join us for some laid back fun. All ability levels welcome.</p>
+                    <p></p>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- .container-->
-    </nav>
-  </header>
-  <!-- End Navigation-->
-  <script>
-    jQuery(function ($) {
+    </div>
+    <!-- /.container -->
+
     
-      'use strict';
+            <div w3-include-html="layout/footer.html"></div> 
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 10000 //changes the speed
+    })
+    </script>
     
-      /* ---------------------------------------------- /*
-       * Preloader
-       /* ---------------------------------------------- */
-    
-      $(window).ready(function () {
-        $('#pre-status').fadeOut();
-        $('#tt-preloader').delay(350).fadeOut('slow');
-      });
-    
-    
-      // -------------------------------------------------------------
-      // Animated scrolling / Scroll Up
-      // -------------------------------------------------------------
-    
-      (function () {
-        $('a[href*="#"]').bind("click", function (e) {
-          var anchor = $(this);
-          $('html, body').stop().animate({
-            scrollTop: $(anchor.attr('href')).offset().top
-          }, 1000);
-          e.preventDefault();
+    <script>    
+        $(function() {
+            $('body').removeClass('fade-out');
         });
-      }());
-    
-    
-      // -------------------------------------------------------------
-      // Full Screen Slider
-      // -------------------------------------------------------------
-      (function () {
-        $(".tt-fullHeight").height($(window).height());
-    
-        $(window).resize(function () {
-          $(".tt-fullHeight").height($(window).height());
-        });
-    
-      }());
-    
-    
-      // -------------------------------------------------------------
-      // Sticky Menu
-      // -------------------------------------------------------------
-    
-      (function () {
-        $('.header').sticky({
-          topSpacing: 0
-        });
-    
-        $('body').scrollspy({
-          target: '.navbar-custom',
-          offset: 70
-        })
-      }());
-    
-    
-      // -------------------------------------------------------------
-      // Back To Top
-      // -------------------------------------------------------------
-    
-      (function () {
-        $(window).scroll(function () {
-          if ($(this).scrollTop() > 100) {
-            $('.scroll-up').fadeIn();
-          } else {
-            $('.scroll-up').fadeOut();
-          }
-        });
-      }());
-    
-    
-      // -------------------------------------------------------------
-      // Countup
-      // -------------------------------------------------------------
-      $('.count-wrap').bind('inview', function (event, visible, visiblePartX, visiblePartY) {
-        if (visible) {
-          $(this).find('.timer').each(function () {
-            var $this = $(this);
-            $({Counter: 0}).animate({Counter: $this.text()}, {
-              duration: 2000,
-              easing: 'swing',
-              step: function () {
-                $this.text(Math.ceil(this.Counter));
-              }
-            });
-          });
-          $(this).unbind('inview');
-        }
-      });
-    
-    
-      // -------------------------------------------------------------
-      // Progress Bar
-      // -------------------------------------------------------------
-    
-      $('.skill-progress').bind('inview', function (event, visible, visiblePartX, visiblePartY) {
-        if (visible) {
-          $.each($('div.progress-bar'), function () {
-            $(this).css('width', $(this).attr('aria-valuenow') + '%');
-          });
-          $(this).unbind('inview');
-        }
-      });
-    
-      // -------------------------------------------------------------
-      // More skill
-      // -------------------------------------------------------------
-      $('.more-skill').bind('inview', function (event, visible, visiblePartX, visiblePartY) {
-        if (visible) {
-          $('.chart').easyPieChart({
-            //your configuration goes here
-            easing: 'easeOut',
-            delay: 3000,
-            barColor: '#68c3a3',
-            trackColor: 'rgba(255,255,255,0.2)',
-            scaleColor: false,
-            lineWidth: 8,
-            size: 140,
-            animate: 2000,
-            onStep: function (from, to, percent) {
-              this.el.children[0].innerHTML = Math.round(percent);
-            }
-    
-          });
-          $(this).unbind('inview');
-        }
-      });
-    
-    
-      // -------------------------------------------------------------
-      // Shuffle
-      // -------------------------------------------------------------
-    
-    
-    
-    
-      // -------------------------------------------------------------
-      // Magnific Popup
-      // -------------------------------------------------------------
-    
-      (function () {
-        $('.image-link').magnificPopup({
-    
-          gallery: {
-            enabled: true
-          },
-          removalDelay: 300, // Delay in milliseconds before popup is removed
-          mainClass: 'mfp-with-zoom', // this class is for CSS animation below
-          type: 'image'
-        });
-    
-      }());
-    
-    
-      (function () {
-        $('.popup-video').magnificPopup({
-          disableOn: 700,
-          type: 'iframe',
-          mainClass: 'mfp-with-zoom',
-          removalDelay: 300,
-          preloader: false,
-          fixedContentPos: false
-        });
-      }());
-    
-    
-      // -------------------------------------------------------------
-      // Fit Vids
-      // -------------------------------------------------------------
-      (function () {
-        $(".video-container").fitVids();
-      }());
-    
-    
-      // -------------------------------------------------------------
-      // Vidio auto play
-      // -------------------------------------------------------------
-      (function () {
-    
-        /* Vimeo API: http://developer.vimeo.com/player/js-api */
-    
-        var iframe = document.getElementById('nofocusvideo');
-        // $f == Froogaloop
-        var player = $f(iframe);
-    
-        $('.modal').on('hidden.bs.modal', function () {
-          player.api('pause');
-        })
-    
-        $('.modal').on('shown.bs.modal', function () {
-          player.api('play');
-        })
-      }());
-    
-    
-      // -------------------------------------------------------------
-      // STELLAR FOR BACKGROUND SCROLLING
-      // -------------------------------------------------------------
-    
-      $(window).on('load',function () {
-    
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    
-        } else {
-          $.stellar({
-            horizontalScrolling: false,
-            responsive: true
-          });
-        }
-    
-      });
-    
-    
-      // -------------------------------------------------------------
-      // WOW JS
-      // -------------------------------------------------------------
-    
-      (function () {
-    
-        new WOW({
-    
-          mobile: false
-    
-        }).init();
-    
-      }());
-    
-    
-      // -------------------------------------------------------------
-      // Contact Form
-      // -------------------------------------------------------------
-    
-      $('#contactForm').on('submit', function (e) {
-    
-        e.preventDefault();
-    
-        var $action = $(this).prop('action');
-        var $data = $(this).serialize();
-        var $this = $(this);
-    
-        $this.prevAll('.alert').remove();
-    
-        $.post($action, $data, function (data) {
-    
-          if (data.response == 'error') {
-    
-            $this.before('<div class="alert alert-danger">' + data.message + '</div>');
-          }
-    
-          if (data.response == 'success') {
-    
-            $this.before('<div class="alert alert-success">' + data.message + '</div>');
-            $this.find('input, textarea').val('');
-          }
-    
-        }, "json");
-    
-      });
-    
-    
-      // -------------------------------------------------------------
-      // Google Map
-      // -------------------------------------------------------------
-    
-      (function () {
-        var myLatlng = new google.maps.LatLng(41.372641, -74.687387);
-    
-        var styles = [
-          {
-            featureType: "landscape",
-            stylers: [
-              {color: '#f7f7f7'}
-            ]
-          }, {
-            featureType: "natural",
-            stylers: [
-              {hue: '#00ffe6'}
-            ]
-          }, {
-            featureType: "road",
-            stylers: [
-              {hue: '#fff'},
-              {saturation: -70}
-            ]
-          }, {
-            featureType: "building",
-            elementType: "labels",
-            stylers: [
-              {hue: ''}
-            ]
-          }, {
-            featureType: "poi", //points of interest
-            stylers: [
-              {hue: ''}
-            ]
-          }
-        ];
-    
-        var mapOptions = {
-          zoom: 15,
-          scrollwheel: false,
-          center: myLatlng,
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-          disableDefaultUI: true,
-          styles: styles
-        }
-        var map = new google.maps.Map(document.getElementById('mapCanvas'), mapOptions);
-    
-        var marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          animation: google.maps.Animation.DROP,
-          title: 'Hello World!'
-        });
-    
-        var contentString = '' +
-          '' +
-          '';
-    
-        var infowindow = new google.maps.InfoWindow({
-          content: contentString
-        });
-    
-        google.maps.event.addListener(marker, 'click', function () {
-          infowindow.open(map, marker);
-        });
-    
-      }());
-    
-    
-    });
-  </script>
-</body></html>
+    </script>
+            
+    <script>
+        w3IncludeHTML();
+    </script>
+
+</body>
+
+</html>
